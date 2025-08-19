@@ -1,11 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Palms</title>
-    <meta http-equiv="refresh" content="0; url=foodmenu.html" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Radisson Blu</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Logo */
+    header {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .logo {
+      width: 250px;
+      height: auto;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid #333;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Cards container */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      width: 90%;
+      max-width: 1000px;
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    /* Card */
+    .card {
+      background: #fff;
+      border-radius: 1.2rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin: 1rem 0;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      padding: 0 1rem 1.5rem;
+      color: #666;
+    }
+
+    /* Mobile tweak */
+    @media (max-width: 600px) {
+      .logo {
+        width: auto;
+        height: 90px;
+      }
+
+      .card h3 {
+        font-size: 1.1rem;
+      }
+
+      .card p {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Replace this placeholder with your actual logo -->
+    <div class="logo">
+      <img src="images/radisson-blu-logo.png" alt="Brand Logo">
+    </div>
+  </header>
+
+  <main class="card-container">
+    <a href="foodmenu.html" class="card">
+      <img src="images/food-menu/menu-card-page1.jpg" alt="Food Menu">
+      <h3>Food Menu</h3>
+      <p>Explore delicious dishes carefully curated for you.</p>
+    </a>
+
+    <a href="spamenu.html" class="card">
+      <img src="images/spa-menu/Tattva-Spa_page-0001.jpg" alt="Spa Menu">
+      <h3>Spa Menu</h3>
+      <p>Relax, refresh, and rejuvenate with our spa services.</p>
+    </a>
+
+    <a href="compendiummenu.html" class="card">
+      <img src="images/compendium/COMPENDIUM_page-0001.jpg" alt="Compendium">
+      <h3>Compendium</h3>
+      <p>Discover guides, activities, and helpful information.</p>
+    </a>
+  </main>
+</body>
+
 </html>
+
+
